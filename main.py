@@ -1,8 +1,18 @@
+#!/usr/bin/python3
+
 import random 
-#print(random.randint(0,1))
-x = 0
-x = input()
-print(x)
+
+mutationRate = input('突變率：')
+matingRate = input('交配率：')
+
+"""
+def main():
+    maternalProduce()
 
 def maternalProduce():
-    print("test")
+    print(random.randint(100,350))
+    print(random.randint(10,50) * 0.1)
+    print(random.randint(10,30))
+    print(random.randint(2000,3000))
+    return
+"""
