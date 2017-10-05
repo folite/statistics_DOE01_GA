@@ -2,17 +2,15 @@
 
 import random 
 
-mutationRate = input('突變率：')
-matingRate = input('交配率：')
+maternal = []
 
-"""
-def main():
-    maternalProduce()
+def maternal_produce(): #母體建立 zfill長度不足補0
+    temp = bin(random.randint(100,350))[2:].zfill(9)
+    press = bin(random.randint(10,50))[2:].zfill(6)
+    time = bin(random.randint(10,30))[2:].zfill(5)
+    prm = bin(random.randint(2000,3000))[2:].zfill(12)
+    maternal.append(temp + press + time + prm)
 
-def maternalProduce():
-    print(random.randint(100,350))
-    print(random.randint(10,50) * 0.1)
-    print(random.randint(10,30))
-    print(random.randint(2000,3000))
-    return
-"""
+for x in range(10):
+     maternal_produce()
+print(maternal)
